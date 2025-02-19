@@ -1,0 +1,692 @@
+
+  body {
+      background-color: black;
+      margin: 0; /* Remove default body margin */
+      padding: 0; /* Remove default body padding */
+    }
+    .top__navbar {
+      padding: 5px;
+      margin-left: 100px;
+      background-color: black;
+      display: flex;
+      border: 1px solid black;
+      border-radius: 40px;
+      align-self: center;
+      margin-right: none;
+      margin-bottom: 30px;
+      width: 1100px;
+    }
+    
+    .everything {
+      display: flex;
+    }
+    .overall {
+      padding: 15px;
+      border-radius: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 650px;
+      align-items: flex-start;
+      background-color: black;
+      height: 650px;
+    }
+    .side_navbar {
+      padding: 5px;
+      background-color: black;
+      border-radius: 10px;
+      display: flex;
+      border: 1px solid black;
+      border-radius: 40px;
+      flex-direction: column;
+      align-self: stretch;
+      margin-right: 10px;
+      margin-left: none;
+      margin-top: 10px;
+      padding-top: 10px;
+      height: 500px;
+      width: 80px;
+    }
+    .section{
+      background-color: #61677A;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 20px;
+      margin-left: 0;
+      height: 200px;
+      width: 375px;
+      cursor: pointer;
+      border: 1px solid black;
+    }
+    .climate{
+      border: 1px solid black;
+      background: linear-gradient(to bottom, #279EFF 0%, #0E21A0 100%);
+      padding: 5px;
+      margin: 5px;
+      border-radius: 20px;
+      height: 200px;
+      width: 215px;
+      color: aliceblue;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: #61677A;
+      font-size: large;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+    .module{
+      border: 1px solid black;
+      background-color: black;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 20px;
+      height: 655px;
+      width: 380px;
+      display: flex;
+      flex-direction: column;
+    }
+    .top{
+      background-color: black;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 10px;
+      border-color:black;
+      height: 300px;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    input[type="file"] {
+      display: none; /* Hide the default file input */
+  }
+  
+  .idk{
+      background-color: #5b6ada;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  #deleteButton {
+    margin-top: 5px;
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /* Style the image preview */
+  #imagePreview {
+      max-width: 300px;
+      max-height: 300px;
+  }
+    .top_nav{
+      background-color: black;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 10px;
+      border-color: black;
+      height: 50px;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .km{
+      background-color: #4b5266;
+      border-color: #2e353b;
+      border-radius: 40px;
+      margin: 5px;
+      height: 40px;
+      width: 80px;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      
+    }
+    .bottom{
+      background-color: black;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 10px;
+      border-color: black;
+      height: 280px;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .mini_nav{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .mini{
+      border-radius: 50px;
+      border-color: black;
+      background-color: #4b5266;
+      border: 10px;
+      width: 60px;
+      height: 60px;
+    }
+    .mini:hover{
+      background-color: rgb(52, 106, 232);
+      border: 1px solid rgb(52, 106, 232);
+    }
+    .speed{
+      border-radius: 10px;
+      border-color: black;
+      background-color: black;
+      padding:auto;
+      border: auto;
+      width: 280px;
+      height:280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .speed_1{
+      border: 10px solid  #5b6ada ;
+      border-color: #5b6ada;
+      background-color: #5b6ada;
+      border-radius: 50%;
+      height: 190px;
+      width: 190px;
+      border: 50px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .speed_2{
+      border: 10px solid black;
+      background-color: black;
+      border-radius: 70%;
+      height: 185px;
+      width: 185px;
+      border: 50px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    /* ... (your existing CSS code) ... */
+  
+  /* Add styles for the speedometer */
+  .speedometer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .speed_value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #e6e9ef;
+  }
+  
+  .speed_unit {
+    font-size: 20px;
+    color: #d2d9e4;
+  }
+  
+  /* ... (rest of your CSS) ... */
+  
+    .features{
+      border: 1px solid black;
+      background-color: #35373d;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 20px;
+      height: 250px;
+      width: 250px;
+      align-self: flex-start ;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  .calender1{
+    padding: 10px 0;
+    width: 320px; /* Constrained width */
+    text-align: center;
+    border: 1px solid black;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 20px;
+      height: 250px;
+      width: 345px;
+      color: aliceblue;
+      background: #35373d;
+      text-align: center;
+  }
+  
+  .calender1 ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .calender1 ul li {
+    color: white;
+    font-size: 10px; /* Adjusted font size */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .calender1 .prev {
+    float: left;
+    padding-top: 5px;
+  }
+  
+  .calender1 .next {
+    float: right;
+    padding-top: 5px;
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 2px 0;
+    background-color: black;
+    width:335px;
+    height:25px;
+    border-radius:10px;
+    padding-top:5px;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 25px; /* Constrained width for weekdays */
+    color: #666;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .days {
+    padding: 5px 0;
+    background: #eee;
+    margin: 0;
+    width:335px;
+    height: 135px;
+    background-color: black;
+    border-radius:10px;
+    padding:10px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 35px; /* Constrained width for days */
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: 20px;
+    color: #777;
+  }
+  
+  .days li .active {
+    padding: 3px;
+    background: #1abc9c;
+    color: white !important;
+  }
+  
+  /* Add media queries for smaller screens */
+  @media screen and (max-width: 345px) {
+    .weekdays li, .days li {width: 42px;}
+  }
+  
+  @media screen and (max-width: 345px) {
+    .weekdays li, .days li {width: 38px;}
+    .days li .active {padding: 2px;}
+  }
+    .distance{
+      background-color: black;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 20px;
+      height: 60px;
+      width: 285px;
+    }
+    .distance1{
+      border: 1px solid black;
+      background-color: #35373d;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 20px;
+      height: 60px;
+      width: 280px;
+    }
+    .media{
+      border: 1px solid black;
+      background-color: #35373d;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 20px;
+      height: 60px;
+      width: 315px;
+    }
+    /*in ine elements styling*/
+    .box {
+      border: 1px solid black;
+      background-color: #4b5266;
+      height: 60px;
+      width: 60px;
+      margin: 10px;
+      padding: 5px;
+      border-radius: 50px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .box1 {
+      border: 1px solid black;
+      cursor: pointer;
+      background-color: #4b5266;
+      height: 60px;
+      width: 60px;
+      margin: 10px;
+      padding: 5px;
+      border-radius: 50px;
+      margin-top: 60px;
+    }
+    .box1:hover{
+      background-color: rgb(52, 106, 232);
+    }
+    .box2 {
+      cursor: pointer;
+      background-color: #4b5266;
+      height: 60px;
+      width: 100%;
+      border-radius: 40px;
+      margin-top: 0;
+      font-weight: bolder;
+      font-size: 16px;
+      font-family: 'Courier New', Courier, monospace;
+      align-self: flex-start;
+      border: 1px solid black;
+    
+    }
+    .box2:hover{
+      background-color: rgb(52, 106, 232);
+    }
+    .box:hover{
+      background-color: rgb(52, 106, 232);
+    }
+    .buttons {
+      border: 2px solid #4b5266;
+      background-color: #4b5266;
+      height: 65px;
+      width: 65px;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 25px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .buttons:hover{
+      border: 2px solid rgb(52, 106, 232);
+      background-color: rgb(52, 106, 232);
+    }
+    .buttons.active{
+      border: 2px solid rgb(52, 106, 232);
+      background-color: rgb(52, 106, 232);
+    }
+    .logo{
+      border: 1px solid white;
+      padding: 1px;
+      background-color: #2e353b;
+      margin: 10px;
+      border-radius: 50px;
+      margin-left: 10px;
+      height: 60px;
+      width: 60px;
+    }
+    .dashboard{
+      padding: 10px;
+      padding-top: 15px;
+      background-color: black;
+      margin: 10px;
+      border-radius: 40px;
+      height: 30px;
+      width: 140px;
+      font-weight: bold;
+      font-size: 25px;
+      color: aliceblue;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .search{
+      padding: 10px;
+      background-color: black;
+      border: 1px solid white;
+      color: black;
+      text-decoration-color: rgb(15, 16, 16);
+      margin: 10px;
+      margin-left: 80px;
+      border-radius: 40px;
+      height: 30px;
+      width: 300px;
+      cursor: pointer;
+    }
+    .icon{
+      border: 1px solid #2e353b ;
+      height:50px;
+      width: 50px;
+      margin: 10px;
+      border-radius: 40px;
+      background-color: #2e353b;
+      cursor: pointer;
+    }
+    .icon:hover{
+      background-color: rgb(52, 106, 232);
+      border: 1px solid rgb(52, 106, 232);
+    }
+    .call {
+      padding: 10px;
+      margin: 10px;
+      margin-left: 40px;
+      height: 60px;
+      width: 90px;
+      border-radius: 40px;
+      width: 100px;
+      background-color: #2e353b;
+      color: aliceblue;
+      font-weight: 200;
+      justify-self: stretch;
+      cursor: pointer;
+      border: 1px solid #2e353b;
+    }
+    .call:hover{
+      background-color: rgb(52, 106, 232);
+      border: 1px solid rgb(52, 106, 232);
+    }
+    .date {
+      border: 1px solid black;
+      padding: 10px;
+      margin: 10px;
+      background-color: black;
+      color: aliceblue;
+      font-weight: 100;
+      border-radius: 40px;
+      width: 120px;
+      text-align: center;
+    }
+    .profile {
+      border: 1px solid #2e353b;
+      padding: 10px;
+      margin: 10px;
+      height: 60px;
+      width: 60px;
+      border-radius: 50px;
+      background-color: #2e353b;
+      cursor: pointer;
+    }
+    .profile:hover{
+      background-color: rgb(52, 106, 232);
+      border: 1px solid rgb(52, 106, 232);
+    }
+    /*api for map*/
+    #map {
+      height: 200px;
+      width: 375px;
+    }
+    p{
+      padding: 5px;
+      margin: 5px;
+      align-self: center;
+    }
+  .p{
+      padding: 5px;
+      margin: 5px;
+      align-self: center;
+    }
+    .weather{
+      padding: 5px;
+      margin: 5px;
+      /* Import Google font - Poppins calender code for the calender*/
+    }
+  
+  * {box-sizing: border-box;}
+  ul {list-style-type: none;}
+  body {font-family: Verdana, sans-serif;}
+  
+  .month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: rgb(52, 106, 232);
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 12%;
+    color: #666;
+    text-align: center;
+  }
+  
+  .days {
+    padding: 10px 0;
+    background-color:  rgb(52, 106, 232);
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  .days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important;
+  }
+  
+  /* Add media queries for smaller screens */
+  @media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+  }
+  
+  @media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+  }
+  
+  @media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+  }
+  #myProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #04AA6D;
+  }
+  .container {
+    width: 100%;
+    background-color: #ddd;
+    height:30px;
+    border-radius:25px;
+  }
+  
+  .skills {
+    text-align: right;
+    padding-bottom: 10px;
+    color: white;
+  }
+  .css {width: 80%; background-color: #2196F3;height:30px;border-radius:25px;}
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

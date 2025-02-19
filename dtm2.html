@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DRIVE ASSIST</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="dtm.css">
+</head>
+
+<body>
+    <div id="id015" class="w3-modal">
+        <div class="w3-modal-content w3-animate-left w3-card-4">
+          <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('id015').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>TRIP PLANNER</h2>
+          </header>
+          <div class="w3-container">
+            <p>DESTINATION - OOTY </p>
+            <p>NO PLANS! HURRY UP ! PLAN FAST !</p>
+          </div>
+          <footer class="w3-container w3-teal">
+            <P><a href="https://www.goibibo.com/hotels/hotels-in-chennai-ct/"> Wanna book Hotel nearby ?</a></P>
+            <P><a href="https://www.eazydiner.com/chennai">Wanna Book reservation for restaurants near you ?</a></P>
+          </footer>
+        </div>
+      </div>
+    <div id="id014" class="w3-modal">
+        <div class="w3-modal-content w3-animate-left w3-card-4">
+          <header class="w3-container w3-teal" style="color: #31e183;"> 
+            <span onclick="document.getElementById('id014').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>FASTAG BALANCE</h2>
+          </header>
+          <div class="w3-container">
+            <p>Available Balance :-</p>
+            <p>₹ 2000.00</p>
+          </div>
+          <footer class="w3-container w3-teal" style="color: #edf3f0;">
+            <p><a href="https://www.freecharge.in/fastag-recharge">Recharge your Fastag  ></a></p>
+          </footer>
+        </div>
+      </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        <a href="#">Logout</a>
+    </div>
+    <div id="id012" class="w3-modal">
+        <div class="w3-modal-content w3-animate-right">
+            <header class="w3-container w3-teal">
+                <span onclick="document.getElementById('id012').style.display='none'"  class="w3-button w3-display-topright">&times;</span>
+                <h2>FIND MECHANIC</h2>
+                <div id="myProgress">
+                    <div id="myBar"></div>
+                </div>
+                <br>
+                <button onclick="move()">Search</button>
+                <p id="status">waiting for mechanic to accept</p>
+            </header>
+        </div>
+    </div>
+    <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+
+    </div>
+  </div>
+   
+    <header>
+        <!-- Top Navbar -->
+        <div class="top__navbar">
+            <div><button class="logo"><i class="fa-brands fa-slack fa-2x" style="color: #e9f0fb;"></i></button></div>
+            <div class="dashb oard">DASHBOARD</div>
+            <div><input class="search" type="text" id="mySearch" onkeyup="myFunction()"
+                    placeholder="Search.. " style="color: aliceblue;" title="Type in a category"></div>
+            <div><button type="submit" class="icon"><i class="fa-solid fa-magnifying-glass"
+                        style="color: #d2d9e4;"></i></button></div>
+            <div><button onclick="document.getElementById('id012').style.display='block'" class="call"><i class="fa-solid fa-wrench fa-2xs" style="color: #e9ecf1;"></i><b>  Find Mechanic</b></button>
+            </div>
+            <div class="date" id="datetime"><p></p></div>
+            <div><button type="button" class="profile" onclick="document.getElementById('id01').style.display='block'"><i class="fa-solid fa-user fa-xl"
+                        style="color: #e6ebf5;"></i></button></div>
+        </div>
+    </header>
+    <section class="everything">
+        <!-- Side Navbar -->
+        <nav class="side_navbar">
+            <div><button type="button" class="box1"><i class="fas fa-home" style="color: #ecf0f5;"></i></button></div>
+            <div><button type="button" class="box" onclick="document.getElementById('id01').style.display='block'"><i class="fas fa-user" style="color: #e1e5eb;"></i></button></div>
+            <div><button type="button" class="box" onclick="document.getElementById('id014').style.display='block'"><i class="fas fa-wallet" style="color: #e8ebf0;"></i></button></div>
+            <div><button type="button" class="box" onclick="document.getElementById('id015').style.display='block'"><i class="fas fa-chart-bar" style="color: #e8ecf3;"></i></button></div>
+            <div><button type="button" class="box" onclick="openNav()"><i class="fas fa-cog" style="color: #eef1f5;"></i></button></div>
+        </nav>
+        <div class="overall">
+            <!-- Sections -->
+            <div class="distance"><button type="button" class="box2" id="getLocationButton" style="color: #d2d9e4;"><i class="fa-solid fa-magnifying-glass-location fa-2xl" style="color: #ebeef5;"></i> Get My Location</button></div>
+            <div class="distance"><button type="button" class="box2" id="getLocation" style="color: #d2d9e4;"><i class="fa-solid fa-paper-plane fa-2xl" style="color: #e6e9ef;"></i> Share My Location</button></div>
+            <section class="section" id="map">
+            </section>
+            <section class="climate" id="weather-info">
+              <div class = "p">WEATHER</div>
+            </section>
+            <section class="features">
+                <button type="button" class="buttons"><i class="fa-solid fa-lock fa-2xl" style="color: #e4e5e7;"></i>
+                </button>
+                <button type="button" class="buttons"><i class="fa-brands fa-bluetooth-b fa-2xl"
+                        style="color: #dce1ea;"></i></button>
+                <button type="button" class="buttons"><i class="fa-solid fa-music fa-2xl" style="color: #dbdfe6;"></i>
+                </button>
+                <button type="button" class="buttons"><i class="fa-solid fa-location-dot fa-2xl"
+                        style="color: #dde3ee;"></i></button>
+                <button type="button" class="buttons"><i class="fa-solid fa-microphone fa-2xl"
+                        style="color: #dce1ea;"></i></button>
+                <button type="button" class="buttons"><i class="fa-solid fa-temperature-three-quarters fa-2xl"
+                        style="color: #d2d9e4;"></i></button>
+                <button type="button" class="buttons"><i class="fa-solid fa-droplet fa-2xl" style="color: #dde1e9;"></i>
+                </button>
+                <button type="button" class="buttons"><i class="fa-solid fa-radio fa-2xl" style="color: #d3d7de;"></i>
+                </button>
+                <button type="button" class="buttons"><i class="fa-solid fa-comments fa-2xl"
+                        style="color: #e8ecf2;"></i></button>
+            </section>
+            <!--calender-->
+           <div class="calender1">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      August<br>
+      <span style="font-size:14px">2021</span> <!-- Adjusted font size -->
+    </li>
+  </ul>
+ <br>
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+<br>
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+</div>
+
+            <section class="distance1">
+                <h6></h6>
+                <div class="container">
+                  <div class="skills css">80%</div>
+                </div>            </section>
+            <section class="media" style="background-color: black;">
+                <audio controls>
+                    <source src="horse.ogg" type="audio/ogg">
+                    <source src="horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+        </div>
+        <section class="module">
+            <div class="top_nav">
+                <div class="km"><i class="fa-solid fa-gas-pump" style="color: #e5e7eb;margin-top: 5px;"></i><h6 style="color: #d2d9e4;padding-bottom: 5px;">5 km</h6></div>
+                <div class="km"><i class="fa-solid fa-diamond-turn-right" style="color: #e6e9ef;margin-top: 5px;"></i><h6 style="color: #d2d9e4;padding-bottom: 5px;">200 m</h6></div>
+            </div>
+            <div class="top">
+                <label class="idk" for="imageInput" id="chooseButton">Choose Image</label>
+                <input type="file" id="imageInput" accept="image/*">
+                <img id="uploadedImage" src="" alt="Uploaded Image" style="display: none;" height="300px" width="300px">
+
+            </div>
+            <div class="bottom">
+                <div class="mini_nav">
+                    <button class="mini"><i class="fa-regular fa-sun fa-2xl" style="color: #e9ecf1;"></i></button>
+                    <button class="mini"><i class="fa-solid fa-fingerprint fa-2xl" style="color: #eceff3;"></i></button>
+                    <button class="mini"><i class="fa-solid fa-tag fa-rotate-270 fa-2xl" style="color: #edeff3;"></i></button>
+                </div>
+                <div class="speed">
+                    <div class="speed_1">
+                        <div class="speed_2">
+                            <div class="speed_value" id="speedValue">0</div>
+                            <div class="speed_unit">km/h</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyBfVLQanuy69xKw3PB2rFEuwd63umf2roc&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>
